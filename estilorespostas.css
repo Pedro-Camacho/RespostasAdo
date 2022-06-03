@@ -22,5 +22,11 @@
     justify-content: center;
     color: aquamarine;
     position: relative;
+    
 
+}
+.textopq{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
 }
