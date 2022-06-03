@@ -1,4 +1,14 @@
-let score = 0
+let score = 0;
+function loadperguntas(){
+   let resposta =document.querySelector("#score");
+		resposta.innerText=score;
+}
+function start(){
+   let primeirapergunta=document.getElementById("questionario");
+   primeirapergunta.style.display="block";
+   let limpartela=document.getElementById("startbttn");
+   limpartela.style.display="none";
+}
 function responder1(valor){
    let next= document.getElementById("pergunta2");
    next.style.display="block";
@@ -6,10 +16,12 @@ function responder1(valor){
 		resposta.innerText=score;
     if(valor==1){
        alert("acertou");
-       score++;  
+       score++;
+      resposta.innerText=score; 
     }  
     let ultima=document.getElementById("pergunta1");
     ultima.style.display="none";
+    
 }
 
 function responder2(valor){
